@@ -2,7 +2,7 @@
   "use strict";
 
   const english = {
-    pageTitle: "Han Bowen - Personal Website",
+    pageTitle: "Han Bowen 韩博文 | AI4SE · AI4Med",
     name: "Han Bowen",
     university: "Universiti Sains Malaysia · 2023–2027",
     major: "Computer Science (Intelligent Computing)",

@@ -16,6 +16,10 @@
 
 GitHub Pages 使用 `main` 分支的根目录发布。后续修改后提交并推送到 `main`，GitHub 会自动更新网站。发布文件包括 `index.html`、`.nojekyll` 和完整的 `assets/` 文件夹；`.preview/` 只用于本地检查，不上传。图片使用相对路径，也支持部署到仓库子路径。
 
+搜索设置：HTML 标题与页面摘要包含“韩博文”和“Han Bowen”，个人资料结构化数据另关联论文署名“Bowen Han”。这些资料直接写入 HTML，读取时不依赖语言切换。`robots.txt` 允许抓取并提供 `sitemap.xml` 地址；站点地图与 canonical 统一使用正式 HTTPS 地址。请一并发布这两个文件，实质更新主页时同步更新站点地图中的 `lastmod` 日期。更换域名时，也要更新 HTML 元数据、结构化数据、站点地图与 robots.txt 中的绝对地址。
+
+这些设置帮助搜索引擎发现和理解主页，但不保证收录时间或排名。可在 Google Search Console 中验证 `https://hbw1201.github.io/` 的 URL 前缀资源，提交 `sitemap.xml`，再使用网址检查工具请求编入索引；其他搜索引擎需分别使用其站长工具。站点已发布不代表已经完成搜索引擎收录或提交。
+
 可选本地预览：运行 `node scripts/serve.mjs`，打开 `http://127.0.0.1:4173`。
 
 图片说明：
